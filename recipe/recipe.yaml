@@ -135,10 +135,6 @@ outputs:
           then: grpcio-health-checking >=1.44.0,<1.82
         - if: match(python_min, ">=3.13")
           then: grpcio-health-checking >=1.66.2,<1.82
-        - if: match(python_min, "<3.11")
-          then: protobuf >=3.20.0,<7
-        - if: match(python_min, ">=3.11")
-          then: protobuf >=4,<7
         - if: match(python_min, ">=3.12")
           then: universal_pathlib >=0.2.0
         - if: match(python_min, "<3.12")
@@ -236,8 +232,6 @@ outputs:
         - setuptools
         - typer >=0.15.0
         - validators
-        - if: match(python_min, "<3.11")
-          then: tomli >=1.1.0
       run_constraints:
         - python ${{ python_min }}.*
     tests:
