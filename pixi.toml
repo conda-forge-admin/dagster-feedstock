@@ -37,15 +37,6 @@ description = "List contents of all packages found in rattler-build build direct
 [feature.build.tasks.build]
 cmd = "rattler-build build --recipe recipe"
 description = "Build dagster-feedstock directly (without setup scripts), no particular variant specified"
-[feature.build.tasks."build-linux_64_python_min3.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_python_min3.10.yaml "
-description = "Build dagster-feedstock with variant linux_64_python_min3.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_python_min3.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_python_min3.10.yaml "
-description = "Debug dagster-feedstock with variant linux_64_python_min3.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_python_min3.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_python_min3.10.yaml"
-description = "List contents of dagster-feedstock packages built for variant linux_64_python_min3.10"
 [feature.build.tasks."build-linux_64_python_min3.11"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_python_min3.11.yaml "
 description = "Build dagster-feedstock with variant linux_64_python_min3.11 directly (without setup scripts)"
